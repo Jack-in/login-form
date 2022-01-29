@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+// Color Variables
+$darkFadeBg: #093545; 
+$limeGreenBtn: #34df85;
+$inputBgField: #224957; 
+
+body{
+    background: $darkFadeBg;
+    color: #fff;
+}
+.index{
+    color:$limeGreenBtn;
+    text-align:center;
+    margin-top: 10%;
+    font-size: 30px
+
+}
+
+.container{
+    width: 16em;
+    margin: auto;
+    margin-top: 6%;
+    align-items: center;
+    //transform: translate(-50%, -50%);
+    //position: absolute;
+    
+    .content{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 40px;
+           // margin: 8px;
+           margin-bottom: 15px;
+           color: #f5f5f5;
+        }
+       
+        .errors{
+            background: black;
+            margin-top: 40px;
+            width: 17em; 
+        }
+        .input-group{
+               
+            
+                input{
+                    color: #fff;
+                    padding: 10px;
+                    width: 19em;
+                    //margin: 5px;
+                    outline: none;
+                    border: none;
+                    border-radius: 2px;
+                    background: $inputBgField;
+                }
+                label{
+                    margin: 2px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 18px;
+
+                    float: left;
+                   // left: 800px;
+                    color: $limeGreenBtn;
+                }
+            }
+                
+        & p{
+            margin-top: 15px;
+            font-size: 15px;
+            color: $limeGreenBtn;
+            & a{
+                & b{
+                    margin-top: 15px;
+                    font-size: 15px;
+                    color: $limeGreenBtn;
+                     &:hover{
+                       color: grey;
+                       }
+                   }
+            }
+         }
+        button{
+            padding: 10px;
+            margin: 10px;
+            color: #fff;
+            background: $limeGreenBtn;
+            outline: none;
+            border: none;
+            width: 15em;
+            border-radius: 15px;
+            transition: 0.4s;
+            &:hover{
+                background: grey;
+                cursor: pointer; 
+                transition: 0.3s;
+            }
+        }
+
+    }  
+   
+}
