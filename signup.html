@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Registration</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="content">
+            <h1>Signup</h1>
+            <h4><div id="div_refresh" class="errors">
+            </div></h4>
+            
+            <form class="regForm" action="signup_server.php" method="POST">
+        
+                <div class="input-group">
+                    <label for="username"><h4>Username :</h4></label>
+                    <input type="text" name="username" id="username" placeholder="Full name...">
+                </div>
+                <div class="input-group">
+                    
+                    <label for="email"><h4>Email :</h4></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="password"><h4>Password :</h4></label>
+                    <input type="password" name="password_1" id="password_1">
+                </div>
+                <div class="input-group">
+                    <label for="password"><h4>Confirm password :</h4></label>
+                    <input type="password" name="password_2" id="password_2">
+                </div>
+                <p>Already a user?<a href="login.html"><b>Log in</b></a></p>
+                <button type="submit" name="reg_user">Submit</button>
+            </form>
+      </div>
+      <script src="js/signup.js"></script>
+    </div>
+    
+
+
+</body>
+</html>
+
+ 

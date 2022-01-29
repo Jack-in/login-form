@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            <h1>Login</h1>
+            <h4><div id="div_refresh" class="errors">
+            </div></h4>
+        
+         <form action="login_server.php" class= login_form method="POST">
+            <div class="input-group">
+                <label for="username"><h4>Username :</h4></label>
+                <input type="text" name="username" id="username" placeholder="Full name...">
+            </div>
+            
+            <div class="input-group">
+                <label for="password"><h4>Password :</h4></label>
+                <input type="password"  id="password_1" name="password_1">
+            </div>
+            <p>Not a user?<a href="signup.html"><b> Register Here</b></a></p>
+            <button type="submit" name="login_user">Log In</button>
+         </form>
+         
+         
+        </div>
+
+        <script src="js/login.js"></script>
+        
+    </div> 
+   
+</body>
+</html>
