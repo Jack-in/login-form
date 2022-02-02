@@ -7,9 +7,9 @@
     <h2 >
         <?php
 
-            if (isset($_POST["user"]))
+            if (isset($_GET["user"]))
             {
-                echo "<h1>Hello, ". $_POST["user"]."</h1>";
+                echo "<h1>Hello, ". $_GET["user"]."</h1>";
                 echo "<h2><p style='color:white;'>Happy to have you here. Welcome!</p></h2>";
             }
             
