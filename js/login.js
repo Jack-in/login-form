@@ -17,7 +17,8 @@ $(document).ready(function(){
                 //console.log(response);
                 console.log(data);
                 error1 = data;
-                $("#div_refresh").load("errors.php", {error: error1.trim()});
+                 user = un;
+                $("#div_refresh").load("errors.php", {error: error1.trim(), user});
             },
             datatype: 'text'
             
