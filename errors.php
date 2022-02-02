@@ -34,8 +34,9 @@
                 echo "<p>Execution failed</p>"; 
             }
             else if ($_POST["error"] == "loginSuccess"){
-                echo "<script> location.href='index.php'; </script>"; 
-                 exit();
+                $uname = $_POST['user'];
+                echo "<script> location.href='index.php?user=$uname'; </script>";
+                exit();
             }
         }
     ?>
