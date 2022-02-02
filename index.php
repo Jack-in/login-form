@@ -6,14 +6,12 @@
 <div class="index">
     <h2 >
         <?php
-            session_start();
 
-            if (isset($_SESSION["useruid"]))
+            if (isset($_POST["user"]))
             {
-                echo "<h1>Hello, ". $_SESSION["useruid"]."</h1>";
+                echo "<h1>Hello, ". $_POST["user"]."</h1>";
                 echo "<h2><p style='color:white;'>Happy to have you here. Welcome!</p></h2>";
             }
-        echo "hello";
             
         ?>
     </h2>
