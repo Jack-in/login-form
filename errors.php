@@ -35,6 +35,7 @@
             }
             else if ($_POST["error"] == "loginSuccess"){
                 echo "<script> location.href='index.php'; </script>"; 
+                 exit();
             }
         }
     ?>
