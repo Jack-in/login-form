@@ -13,9 +13,7 @@
                 echo "<h1>Hello, ". $_SESSION["useruid"]."</h1>";
                 echo "<h2><p style='color:white;'>Happy to have you here. Welcome!</p></h2>";
             }
-            else {
-            echo "session"
-            }
+            
         ?>
     </h2>
 </div>
